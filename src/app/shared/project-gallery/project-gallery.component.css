@@ -16,6 +16,8 @@
     overflow: hidden;
     position: relative;
     transition: all 0.25s ease-in-out;
+    min-height: 450px;
+    max-height: 450px;
 }
 
 .project-card--selected {

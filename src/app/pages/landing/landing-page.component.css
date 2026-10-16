@@ -46,3 +46,33 @@
   border-width: 0.5vw;
   border-color: white;
 }
+
+.landing-page__tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: balance;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.landing-page__tag {
+  color: var(--text-color);
+  background-color: var(--secondary-light);
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--primary);
+  padding: 5px;
+}
+
+.landing-page__tag:hover {
+  background-color: var(--hover);
+}
+
+.landing-page__tag--selected {
+  background-color: var(--tertiary);
+}
+
+
