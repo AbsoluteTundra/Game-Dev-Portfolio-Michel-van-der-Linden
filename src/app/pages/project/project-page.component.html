@@ -1,0 +1,45 @@
+@if (project(); as selectedProject) {
+  <div class="project-page">
+    <img class="project-page__image" [src]="selectedProject.projectDirectory + 'logo.jpg'" [alt]="selectedProject.projectTitle" />
+
+    <div class="project-page__section">
+      <h1>Project Description</h1>
+      <p class="project-page__paragraph">{{ selectedProject.projectDescription }}</p>
+    </div>
+
+    <div class="project-page__section">
+      <h1>Project Info</h1>
+      <p><strong>Year: </strong>{{ selectedProject.projectYear }}</p>
+      <p><strong>Team Size: </strong>{{ selectedProject.projectTeamSize }}</p>
+      <p><strong>Game Engine: </strong>{{ selectedProject.projectEngine }}</p>
+    </div>
+
+    <div class="project-page__section">
+      <h1>Developer Story</h1>
+      <p class="project-page__paragraph">{{ selectedProject.projectDevStory }}</p>
+      @if (selectedProject.screenshotCount && selectedProject.screenshotCount > 0) {
+        <app-project-screenshot-gallery
+          [screenshotCount]="selectedProject.screenshotCount"
+          [screenshotsDirectory]="selectedProject.projectDirectory"
+        />
+      }
+    </div>
+
+    @if (trailerUrl(); as safeTrailerUrl) {
+      <div class="project-page__trailer">
+        <h1>Trailer</h1>
+        <div class="project-page__video-container">
+          <iframe
+            class="project-page__video"
+            [src]="safeTrailerUrl"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    }
+  </div>
+} @else {
+  <div class="error-page"><h1>Page not found :(</h1></div>
+}

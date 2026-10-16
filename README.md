@@ -1,6 +1,6 @@
 # Game Dev Portfolio
 
-React portfolio site for Michel van der Linden, built with Vite.
+Angular portfolio site for Michel van der Linden.
 
 ## Available Scripts
 
@@ -8,11 +8,11 @@ Run these commands from the project directory:
 
 ### `npm start`
 
-Starts the Vite development server. Open the URL printed in the terminal.
+Starts the Angular development server. Open the URL printed in the terminal.
 
 ### `npm test`
 
-Runs the test suite once with Vitest.
+Runs the Angular unit tests once with Vitest.
 
 ### `npm run build`
 

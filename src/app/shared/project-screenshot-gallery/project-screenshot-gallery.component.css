@@ -1,0 +1,60 @@
+.project-screenshots
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+.project-screenshots__gallery
+{
+    position: relative;
+    width: 75%;
+    border-style: solid;
+    border-color: var(--primary);
+    align-items: center;
+    display: flex;
+}
+
+.project-screenshots__image {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.project-screenshots__control {
+    position: absolute;
+    top: 50%;
+    width: 10%;
+    height: auto;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    color: var(--primary);
+    transform: translateY(-50%);
+}
+
+.project-screenshots__control svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.5;
+}
+
+.project-screenshots__control:hover,
+.project-screenshots__control:focus-visible {
+    color: var(--hover);
+}
+
+.project-screenshots__control--next
+{
+    right: 0;
+}
+
+.project-screenshots__control--previous
+{
+    left: 0;
+}

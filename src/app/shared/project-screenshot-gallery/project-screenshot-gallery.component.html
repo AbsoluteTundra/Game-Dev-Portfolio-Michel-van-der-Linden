@@ -1,0 +1,16 @@
+<div class="project-screenshots">
+  <h1 class="project-screenshots__title">Screenshots</h1>
+  <div class="project-screenshots__gallery">
+    <button type="button" class="project-screenshots__control project-screenshots__control--previous" aria-label="Previous screenshot" (click)="previousScreenshot()">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+      </svg>
+    </button>
+    <img class="project-screenshots__image" [src]="currentImage" alt="Project screenshot" />
+    <button type="button" class="project-screenshots__control project-screenshots__control--next" aria-label="Next screenshot" (click)="nextScreenshot()">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+      </svg>
+    </button>
+  </div>
+</div>

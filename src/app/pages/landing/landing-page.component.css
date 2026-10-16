@@ -1,0 +1,48 @@
+.portfolio__project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 330px), 330px));
+  grid-auto-rows: 1fr;
+  justify-content: center;
+  align-items: stretch;
+  gap: 50px;
+  padding: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  .portfolio__about {
+    flex-direction: column;
+  }
+}
+
+.portfolio__intro {
+  padding: 35px;
+  background-color: var(--primary);
+  margin: 0 0 10px;
+}
+
+.portfolio__intro-title {
+  text-align: center;
+  color: var(--text-color);
+}
+
+.portfolio__about {
+  display: flex;
+  border-radius: 5px;
+  margin-left: 5%;
+  margin-right: 5%;
+  align-items: center;
+}
+
+.portfolio__bio {
+  font-size: calc(0.75vw + 1vh);
+  padding: 1%;
+}
+
+.portfolio__portrait {
+  width: 20%;
+  margin: 5px;
+  border-radius: 300px;
+  border-style: solid;
+  border-width: 0.5vw;
+  border-color: white;
+}

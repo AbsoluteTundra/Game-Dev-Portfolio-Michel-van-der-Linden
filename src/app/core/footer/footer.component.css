@@ -1,0 +1,41 @@
+footer {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: var(--secondary);
+  z-index: 1;
+  box-shadow: 0 -4px 6px rgb(0 0 0 / 25%);
+}
+
+.footer-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  background-color: #fff;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  transition: background-color 250ms ease-in-out;
+}
+
+.linkedin-icon {
+  mask-image: url("../../../../public/logos/linkedin.svg");
+}
+
+.github-icon {
+  mask-image: url("../../../../public/logos/GitHub_Invertocat_White.svg");
+}
+
+.itch-icon {
+  mask-image: url("../../../../public/logos/itchio-logo-textless-white.svg");
+}
+
+footer a:hover .footer-icon,
+footer a:focus-visible .footer-icon {
+  background-color: var(--hover);
+}
