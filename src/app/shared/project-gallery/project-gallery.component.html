@@ -8,11 +8,11 @@
 >
   <img class="project-card__image" [src]="currentProjectImage()" [alt]="projectInfo().projectTitle" />
   <h2 class="project-card__title">{{ projectInfo().projectTitle }}</h2>
-  <div class="project-card__tags">
-    @for (tag of projectInfo().projectTags; track tag) {
-      <span class="project-card__tag">{{ tag }}</span>
-    }
-  </div>
   <p class="project-card__description">{{ projectInfo().projectDescription }}</p>
+    <div class="project-card__tags">
+        @for (tag of projectInfo().projectTags; track tag) {
+            <span class="project-card__tag">{{ tag }}</span>
+        }
+    </div>
   <a [routerLink]="['/', projectInfo().projectTitle]" class="project-card__link">Go to project page</a>
 </article>

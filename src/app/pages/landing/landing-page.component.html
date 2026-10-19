@@ -19,9 +19,9 @@
   </div>
   <h1 id="projects">Projects</h1>
     <div class="landing-page__tags">
-        @for (tag of this.projectTags(); track tag) {
-            <div class="landing-page__tag" [ngClass]="{'landing-page__tag--selected' : tag === this.selectedTag()}" (click)="OnTagClicked(tag)">{{ tag }}</div>
-        }
+   <!--@for (tag of this.projectTags(); track tag) {
+            <div class="landing-page__tag" [ngClass]="{'landing-page__tag&#45;&#45;selected' : tag === this.selectedTag()}" (click)="OnTagClicked(tag)">{{ tag }}</div>
+        }-->
     </div>
   <div class="portfolio__project-list">
     @for (projectInfo of this.filteredProjects(); track projectInfo.projectTitle) {
